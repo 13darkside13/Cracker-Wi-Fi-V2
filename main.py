@@ -99,7 +99,7 @@ class Cracker:
     def scan(self):
         self.interface.scan()
         for i in range(12):
-            for char in '/-\|':
+            for char in ['/','\\','l']:
                 print(f'\r Scanning... {char}', end='')
                 time.sleep(.15)
 
